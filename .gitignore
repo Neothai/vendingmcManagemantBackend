@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build Output
+dist/
+build/
+
+# Environment variables (ห้ามอัปขึ้นเด็ดขาด!)
+.env
+.env.local
+
+# IDE / VS Code temporary files
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+
+# Logs & OS files
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+note.txt

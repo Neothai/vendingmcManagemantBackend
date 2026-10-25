@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // 1. การจัดการไฟล์ (Layout)
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // 2. ตั้งค่าให้เข้ากับ Node.js (ปรับปรุงให้เสถียรสำหรับ Backend)
+    "target": "ES2022",
+    "module": "NodeNext",           // ใช้ NodeNext เพื่อรองรับ ESM บน Node.js ยุคใหม่
+    "moduleResolution": "NodeNext",   // คู่หูของ NodeNext ช่วยให้หาแพ็กเกจเจอแน่นอน
+    "lib": ["ES2022"],              // อิงตาม Target จะทำงานได้แม่นยำกว่า
+    "types": ["node"],
+
+    // 3. ตัวช่วยสร้างไฟล์ตอนบิ้วด์
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // 4. โหมดตรวจจับข้อผิดพลาดแบบเข้มงวด (เซ็ตไว้ดีมากครับ)
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // 5. ตั้งค่าอื่นๆ ที่จำเป็น (ใส่ Decorator สำหรับ TypeORM ครบถ้วน)
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"]
+}
